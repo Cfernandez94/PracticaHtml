@@ -1,12 +1,157 @@
+body{
+	margin: 0px;
+	background-color: #eee;
+}
+
 #wrapper{
-	border: 2px solid black;
+	border-left: 2px solid #cacaca;
+	border-right: 2px solid #cacaca;
+	width: 1200px;
+	margin-left: 70px;
+	margin-top: -27px;
+	color: #363636;
+}
+
+#header{
+	border-bottom: 1px solid #cacaca;
+	background-color: #eee;
+	margin-top: -27px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+}
+
+h1{
+	border-bottom: 1px solid #cacaca;
+	height: 100px;
+	padding-top: 50px;
+	padding-left: 30px;
+	font-size: 2.5em;
+	color: #525252;
+	background-color: #eee;
+}
+
+h2{
+	color: #525252;
 }
 
 a{
 	text-decoration: none;
+	color: #363636;
+}
+
+#content > div.contentDerecho > div.indice > ol > li:nth-child(1) > a,#content > div.contentDerecho > div.indice > ol > li:nth-child(2) > a,#content > div.contentDerecho > div.indice > ol > li:nth-child(3) > a{
+	color: #4232f4;
+}
+
+.nav li a:hover{
+	background-color: #dddddd;
+}
+
+#header > div > ul > li:nth-child(1) > a{
+	margin-left: -40px;
 }
 
 .nav li{
 	display: inline;
-	border: 1px solid black;
 }
+
+.nav li a{
+	padding: 17.5px;
+	border-right: 1px solid #cacaca;
+}
+
+.cont li{
+	list-style: none;
+	margin-left: -40px;
+}
+
+#content{
+	overflow: hidden;
+	background-color: #fff;
+	padding-top: 10px;
+	border-bottom: 1px solid #cacaca;
+}
+
+.contentIzquierdo{
+	width: 221px;
+	margin-top: 50px;
+	margin-left: 10px;
+}
+
+.contentDerecho{
+	width: 800px;
+	margin-top: -162px;
+	float: right;
+	margin-right: 40px;
+}
+
+.companyDir{
+	border: 10px solid white;
+	color: black;
+	background-color: white;
+	border-radius: 3px;
+}
+
+th, tr, td{
+	border: 10px solid white;
+	color: black;
+	background-color: white;
+	height: 32.5px;
+
+}
+
+.formTabla{
+	margin-left: 110px;
+	width: 50%;
+}
+
+.tablaForm{
+	width: 50%;
+	float: right;
+	margin-top: -405px;
+	margin-right: 55px;
+}
+
+caption{
+	padding-top: 8px;
+}
+
+#footer{
+	padding-bottom: 20px;
+}
+
+#nombre, #email, #empresa{
+	width: 60%;
+	height: 20px;
+	border-radius: 3px;
+	background-color: white;
+	border-color: transparent;
+}
+
+#mensaje{
+	width: 60%;
+	border-radius: 3px;
+	background-color: white;
+	border-color: transparent;
+}
+
+#selectOption{
+	height: 20px;
+	border-radius: 3px;
+	background-color: white;
+	border-color: black;
+}
+
+#enviar{
+	height: 20px;
+	border-radius: 3px;
+	background-color: #363636;
+	border-color: #363636;
+	color: #fff;
+}
+
+
+
+
+
+
