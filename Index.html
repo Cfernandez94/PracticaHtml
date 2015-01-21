@@ -3,6 +3,7 @@
 <head>
 	<title> Práctica HTML </title>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/Style.css">
 </head>
 <body>
 
@@ -23,16 +24,16 @@
 		</div> <!-- Cierre header -->
 
 		<div id="content">
-			<div id="contentIzquierdo">
+			<div class="contentIzquierdo">
 				<h2> Articulos relacionados </h2>
 				<ul class="cont">
-					<li> Un artículo relacionado </li>
-					<li> Otro artículo relacionado </li>
-					<li> Un artículo relacionado más </li>
+					<li> <a href="#"> Un artículo relacionado </a> </li>
+					<li> <a href="#"> Otro artículo relacionado </a> </li>
+					<li> <a href="#"> Un artículo relacionado más </a> </li>
 				</ul>
 			</div> <!-- Cierre content Izquierdo -->
 		
-			<div id="contentDerecho">
+			<div class="contentDerecho">
 				<div class="wordInicio"> 
 					<h2> World Wide Web </h2>
 					<p> En informática, la World Wide Web (WWW) o Red informática mundial comúnmente conocida como la Web, es un sistema de distribución de documentos de hipertexto o hipermedios interconectados y accesibles vía Internet. Con un navegador web, un usuario visualiza sitios web compuestos de páginas web que pueden contener texto, imágenes, vídeos u otros contenidos multimedia, y navega a través de esas páginas usando hiperenlaces. </p>
@@ -107,7 +108,93 @@
 				 	<p> Berners Lee dirige desde 2007 el World Wide Web Consortium (W3C), el cual desarrolla y mantiene esos y otros estándares que permiten a los ordenadores de la Web almacenar y comunicar efectivamente diferentes formas de información. </p>
 				 </div> <!-- Cierre estandares -->
 			</div> <!-- Cierre content Derecho -->
-		</div> <!-- Cierre content -->
+		</div> <!-- Cierre content -->	
+
+		<div id="footer">
+			<div class="formTabla">
+					<form method="post">
+						
+							<h2> Contacto </h2>
+
+							<label>Nombre</label> </br>
+                			<input id="nombre" name="nombre" type="text" placeholder="Escriba su Nombre"/> </br>
+
+            				<label>Email</label> </br>
+                			<input id="email" name="email" type="text" placeholder="Escriba su Email" /> </br>
+
+                			<label>Empresa</label> </br>
+                			<input id="empresa" name="email" type="text" placeholder="Escriba su Empresa" /> </br>
+
+                			<label> Tipo de Solicitud: </label> <br/>
+							<input type="radio" name="soporte" value="Soporte" checked="checked" /> Soporte </br>
+							<input type="radio" name="contacto" value="conGen" /> Contacto General </br>
+
+							<label> País donde reside: </label> </br>
+							<select id="selectOption"> 
+								<option value="" selected="selected"> Seleccione </option> 
+								<option value="costarica"> Costa Rica </option>
+								<option value="nicaragua"> Nicaragua </option>
+								<option value="panama"> Panamá </option>
+								<option value="honduras"> Honduras </option>
+								<option value="salvador"> El Salvador </option>
+							</select> </br>
+
+							<label> Su mensaje </label> </br>
+							<textarea id="mensaje" placeholder="Escriba aqui su mensaje" name="descripcion" cols="50" rows="5"> </textarea>
+
+            				</br> <input id="enviar" name="enviar" type="submit" value="Enviar" />
+						
+					</form>
+			</div>
+
+			<div class="tablaForm">
+					<table class="companyDir">
+						<caption> <h2> Directores de Compañia: </h2> </caption>
+						<thead>
+							<th scope="col"> Piso </th>
+							<th scope="col"> Nombre </th>
+							<th scope="col"> Departamento </th>
+							<th scope="col"> Puesto </th>
+							<th scope="col"> Usuario </th>
+						</thead>
+
+						<tbody>
+							<tr>
+								<th scope="row"> 1 </th>
+								<td> Cyntia Fernández </td>
+								<td> Arquitectura </td>	
+								<td> Arquitecta </td>	
+								<td> CFernandez </td>			
+							</tr>
+
+							<tr>
+								<th scope="row"> 2 </th>
+								<td> Kenia Montano </td>
+								<td> Informática </td>	
+								<td> Ingeniera </td>	
+								<td> KMontano </td>			
+							</tr>
+
+							<tr>
+								<th scope="row"> 3 </th>
+								<td> Ginna Solano </td>
+								<td> Diseño </td>	
+								<td> Diseñadora </td>	
+								<td> GSolano </td>			
+							</tr>
+
+							<tr>
+								<th scope="row"> 4 </th>
+								<td> Kimberly Quiros </td>
+								<td> Diseño </td>	
+								<td> Desarrolladora </td>	
+								<td> KQuiros </td>			
+							</tr>
+						</tbody>
+					</table>
+				</div> <!-- Cierre formulario -->
+			</div> 
+		</div> <!-- Cierre Footer -->
 	</div> <!-- Cierre wrapper -->
 </body>
 </html>
